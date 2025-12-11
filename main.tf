@@ -95,7 +95,21 @@ resource "aws_security_group" "my_security_group" {
   }
 }
 
-resource "aws_subnet" "private_db_subnet2" {
+resource "aws_subnet" "private_db_subnet1" {
+  vpc_id            = aws_vpc.my_vpc.id
+  cidr_block        = "10.0.5.0/24"
+  availability_zone = "us-east-1a"
+  map_public_ip_on_launch = false
+
+  tags = {
+    Name        = "database-tier-private-subnet-1"
+    Environment = "dev"
+    Project     = "my-project"
+    AZ          = "us-east-1a"
+  }
+}
+
+resource "aws_subnet" "private_db_subnet02" {
   vpc_id            = aws_vpc.my_vpc.id
   cidr_block        = "10.0.6.0/24"
   availability_zone = "us-east-1c"
@@ -109,5 +123,20 @@ resource "aws_subnet" "private_db_subnet2" {
   }
 }
 
+data "aws_ami" "ubuntu_latest" {
+  most_recent = true
+
+  filter {
+    name   = "name"
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+  }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+
+  owners = ["099720109477"]  # Canonical (Ubuntu)
+}
 
 

@@ -125,3 +125,4 @@ resource "aws_security_group" "private_sg" {
     Project     = "my-project"
   }
 }
+

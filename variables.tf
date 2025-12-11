@@ -93,52 +93,57 @@ variable "internal_elb_name" {
 variable "internal_elb_type" {
   type = string
 }
+
 variable "your_ip_address" {
   type = string
 }
 
+##############################
+# DATABASE VARIABLES (Corrected)
+##############################
+
 variable "database_engine" {
-  type = string
+  type    = string
   default = "aurora-postgresql"
 }
 
 variable "database_engine_version" {
-  type = string
-  default = "11.6"
+  type    = string
+  default = "15.6"   # FIXED — valid Aurora PostgreSQL version
 }
 
 variable "database_vpc_security_group_ids" {
-  type = list(string)
-  default = ["sg-12345678"]
+  type    = list(string)
+  default = ["private-sg"]
 }
 
 variable "database_db_subnet_group_name" {
-  type = string
+  type    = string
   default = "database-subnet-group"
 }
 
 variable "database_availability_zone" {
-  type = string
+  type    = string
   default = "us-east-1a"
 }
 
 variable "database_read_replica_availability_zone" {
-  type = string
+  type    = string
   default = "us-east-1c"
 }
 
 variable "database_instance_class" {
-  type = string
+  type    = string
   default = "db.r5.large"
 }
 
 variable "database_identifier" {
-  type = string
+  type    = string
   default = "aurora-cluster"
 }
 
 variable "database_read_replica_identifier" {
-  type = string
+  type    = string
   default = "aurora-read-replica-az2"
 }
 
