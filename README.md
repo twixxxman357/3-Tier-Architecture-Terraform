@@ -49,5 +49,7 @@ This Terraform configuration sets up a web application infrastructure on AWS. Th
 * This configuration also assumes that you have Terraform installed on your machine
 * You should update the variables in the `terraform.tfvars` file to match your specific use case
 ```
-I hope this helps! Let me know if you have any questions or need further clarification.
+git add .
+git push -u origin main
+
 <img width="1214" height="548" alt="image" src="https://github.com/user-attachments/assets/dab96295-6126-4f5b-ad42-6cc7020d066f" />
