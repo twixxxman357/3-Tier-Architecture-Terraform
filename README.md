@@ -1,4 +1,4 @@
-Here is a sample README file that explains what's happening in your Terraform configuration:
+Here is a sample README file that explains what's happening in your Terraform configuration
 ```
 # Terraform Configuration for Web Application
 
