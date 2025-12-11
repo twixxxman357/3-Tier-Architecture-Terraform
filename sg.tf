@@ -1,6 +1,31 @@
 
 #security groups for public web tier
 
+resource "aws_security_group" "app_sg" {
+  name        = "app-sg"
+  description = "Security group for app tier instances"
+  vpc_id      = aws_vpc.my_vpc.id
+
+  ingress {
+    from_port       = 5432
+    to_port         = 5432
+    protocol        = "tcp"
+    security_groups = [aws_security_group.private_sg.id]
+  }
+
+  egress {
+    from_port       = 5432
+    to_port         = 5432
+    protocol        = "tcp"
+    security_groups = [aws_security_group.private_sg.id]
+  }
+
+  tags = {
+    Name = "app-sg"
+  }
+}
+
+
 resource "aws_security_group" "web_sg" {
   name        = "web-sg"
   description = "Security group for web tier instances"
@@ -100,4 +125,3 @@ resource "aws_security_group" "private_sg" {
     Project     = "my-project"
   }
 }
-

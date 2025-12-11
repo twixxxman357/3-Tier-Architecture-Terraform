@@ -95,3 +95,19 @@ resource "aws_security_group" "my_security_group" {
   }
 }
 
+resource "aws_subnet" "private_db_subnet2" {
+  vpc_id            = aws_vpc.my_vpc.id
+  cidr_block        = "10.0.6.0/24"
+  availability_zone = "us-east-1c"
+  map_public_ip_on_launch = false
+
+  tags = {
+    Name        = "database-tier-private-subnet-2"
+    Environment = "dev"
+    Project     = "my-project"
+    AZ          = "us-east-1c"
+  }
+}
+
+
+
