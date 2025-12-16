@@ -96,9 +96,9 @@ resource "aws_security_group" "my_security_group" {
 }
 
 resource "aws_subnet" "private_db_subnet1" {
-  vpc_id            = aws_vpc.my_vpc.id
-  cidr_block        = "10.0.5.0/24"
-  availability_zone = "us-east-1a"
+  vpc_id                  = aws_vpc.my_vpc.id
+  cidr_block              = "10.0.5.0/24"
+  availability_zone       = "us-east-1a"
   map_public_ip_on_launch = false
 
   tags = {
@@ -110,9 +110,9 @@ resource "aws_subnet" "private_db_subnet1" {
 }
 
 resource "aws_subnet" "private_db_subnet02" {
-  vpc_id            = aws_vpc.my_vpc.id
-  cidr_block        = "10.0.6.0/24"
-  availability_zone = "us-east-1c"
+  vpc_id                  = aws_vpc.my_vpc.id
+  cidr_block              = "10.0.6.0/24"
+  availability_zone       = "us-east-1c"
   map_public_ip_on_launch = false
 
   tags = {
@@ -136,7 +136,7 @@ data "aws_ami" "ubuntu_latest" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"]  # Canonical (Ubuntu)
+  owners = ["099720109477"] # Canonical (Ubuntu)
 }
 
 

@@ -109,7 +109,7 @@ variable "database_engine" {
 
 variable "database_engine_version" {
   type    = string
-  default = "15.6"   # FIXED — valid Aurora PostgreSQL version
+  default = "15.6" # FIXED — valid Aurora PostgreSQL version
 }
 
 variable "database_vpc_security_group_ids" {
