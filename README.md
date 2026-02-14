@@ -17,7 +17,7 @@ Everything runs inside a dedicated Amazon VPC, split across two Availability Zon
 
 Public subnets (Web Tier): internet-facing resources
 
-Private subnets (App + Database Tiers): no direct internet exposure
+Private subnets (App + Database Tiers): no direct internet exposure)
 
 Tier-by-Tier Breakdown
 
@@ -31,7 +31,7 @@ Elastic Load Balancer (ELB) receives inbound traffic and distributes it across:
 
 EC2 instances in public subnets, deployed in AZ1 and AZ2 for availability.
 
-Why this matters (recruiter-friendly):
+Why this matters ?.
 
 Load balancing + Multi-AZ instances → high availability
 
@@ -47,7 +47,7 @@ Traffic from the Web Tier is routed into the App Tier through an internal load b
 
 App servers can communicate outbound only as needed (e.g., to the database), but are not reachable directly from the internet.
 
-Why this matters:
+Why this matters ?
 
 Private subnets reduce attack surface → stronger security posture
 
@@ -63,7 +63,7 @@ Primary DB handles writes.
 
 Read Replica in the second AZ supports read-heavy workloads and improves resiliency.
 
-Why this matters:
+Why this matters ?
 
 Managed HA database setup → reliability
 
