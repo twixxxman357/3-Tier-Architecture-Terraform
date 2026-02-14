@@ -20,6 +20,7 @@ Public subnets (Web Tier): internet-facing resources
 Private subnets (App + Database Tiers): no direct internet exposure
 
 Tier-by-Tier Breakdown
+
 ✅ Web Tier (Public Subnets)
 
 Purpose: Handle incoming internet traffic and serve as the entry point to the system.
