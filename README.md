@@ -2,7 +2,7 @@ Welcome to my Personal Project
 
 Everything that is done in this project is explained so enjoy
 
-AWS 3-Tier Highly Available Web App Architecture (Personal Project)
+AWS 3-Tier Highly Available Web App Architecture 
 
 This project demonstrates a classic 3-tier architecture on AWS designed for high availability, security, and scalability across two Availability Zones (AZ1 & AZ2).
 
@@ -80,7 +80,7 @@ Web Tier forwards internal requests via the internal load balancer to App Tier E
 
 App Tier reads/writes data to Aurora Primary, and can route read-heavy queries to the Aurora Read Replica.
 
-Key Design Highlights (What Recruiters Look For)
+Key Design Highlights 
 
 Multi-AZ deployment for resilience and uptime
 
@@ -93,5 +93,6 @@ Scalable compute with EC2 in separate tiers
 Managed database reliability with Aurora + read replica
 
 Clean separation of concerns (web/app/db) for maintainability
+
 
 b96295-6126-4f5b-ad42-6cc7020d066f" />
