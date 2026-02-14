@@ -1,5 +1,7 @@
-Here is a sample README file that explains what's happening in your Terraform configuration
-```
+Welcome to my Personal Project 
+
+Everything that is done in this project is explained so enjoy
+
 # Terraform Configuration for Web Application
 
 This Terraform configuration sets up a web application infrastructure on AWS. The configuration includes:
@@ -11,18 +13,6 @@ This Terraform configuration sets up a web application infrastructure on AWS. Th
 * An internal load balancer (Internal Load Balancer) that distributes traffic to the app tier instances
 * Security groups to control access to the instances and load balancers
 * Route tables to route traffic between the subnets and load balancers
-
-## Prerequisites
-
-* AWS account with the necessary permissions to create resources
-* Terraform installed on your machine
-
-## Usage
-
-1. Clone this repository to your machine
-2. Run `terraform init` to initialize the Terraform configuration
-3. Run `terraform apply` to apply the Terraform configuration
-4. Run `terraform destroy` to destroy the Terraform configuration
 
 ## Variables
 
@@ -43,13 +33,6 @@ This Terraform configuration sets up a web application infrastructure on AWS. Th
 * The security groups are also configured to allow traffic from the instances to the load balancers
 * The route tables are configured to route traffic between the subnets and load balancers
 
-## Notes
 
-* This configuration assumes that you have an AWS account with the necessary permissions to create resources
-* This configuration also assumes that you have Terraform installed on your machine
-* You should update the variables in the `terraform.tfvars` file to match your specific use case
-```
-git add .
-git push -u origin main
 
 <img width="1214" height="548" alt="image" src="https://github.com/user-attachments/assets/dab96295-6126-4f5b-ad42-6cc7020d066f" />
