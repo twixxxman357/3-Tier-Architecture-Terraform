@@ -12,7 +12,7 @@ Serve internet traffic through a resilient web layer, route requests to a privat
 
 Architecture Overview
 
-1) VPC + Multi-AZ foundation
+One VPC + Multi-AZ foundation
 
 Everything runs inside a dedicated Amazon VPC, split across two Availability Zones to improve fault tolerance. Each tier is placed in the appropriate subnet type:
 
