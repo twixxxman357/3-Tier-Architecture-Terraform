@@ -11,6 +11,7 @@ High-level goal
 Serve internet traffic through a resilient web layer, route requests to a private application layer, and persist data in a highly available managed database—while keeping sensitive resources off the public internet.
 
 Architecture Overview
+
 1) VPC + Multi-AZ foundation
 
 Everything runs inside a dedicated Amazon VPC, split across two Availability Zones to improve fault tolerance. Each tier is placed in the appropriate subnet type:
