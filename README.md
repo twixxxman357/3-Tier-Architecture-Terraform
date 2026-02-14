@@ -96,7 +96,3 @@ Managed database reliability with Aurora + read replica
 
 Clean separation of concerns (web/app/db) for maintainability
 
-<p align="center">
-  <img src="docs/images/architecture.png" alt="AWS 3-Tier Architecture" width="900">
-</p>
-
