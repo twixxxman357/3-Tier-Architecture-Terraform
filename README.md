@@ -18,7 +18,7 @@ Everything runs inside a dedicated Amazon VPC, split across two Availability Zon
 
 Public subnets (Web Tier): internet-facing resources
 
-Private subnets (App + Database Tiers): no direct internet exposure)
+Private subnets (App + Database Tiers): no direct internet exposure
 
 Tier-by-Tier Breakdown
 
