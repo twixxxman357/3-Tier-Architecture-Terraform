@@ -96,3 +96,4 @@ Managed database reliability with Aurora + read replica
 
 Clean separation of concerns (web/app/db) for maintainability
 
+<img width="1214" height="548" alt="image" src="https://github.com/user-attachments/assets/21fa7466-4ac0-4697-8ef1-2ab34ba31821" />
